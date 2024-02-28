@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bg">
+    <h1 id="mainheading">Calculator</h1>
+<center>
+    <div id="cal-container">
+        <input type="text"  id="displaybox">
+        <div id="row1">
+            <button id="ac">AC</button>
+            <button id="clr">CLR</button>
+        </div>
+        <div id="row2">
+            <button id="seven" onclick="appendto(7)">7</button>
+            <button id="eight" onclick="appendto(8)">8</button>
+            <button id="nine" onclick="appendto(9)">9</button>
+            <button id="divide" onclick="appendto('/')">➗</button>
+        </div>
+        <div id="row3">
+            <button id="four" onclick="appendto(4)">4</button>
+            <button id="five" onclick="appendto(5)">5</button>
+            <button id="six" onclick="appendto(6)">6</button>
+            <button id="multiply" onclick="appendto('*')">✖</button>
+        </div>
+        <div id="row4">
+            <button id="one" onclick="appendto(1)">1</button>
+            <button  id="two" onclick="appendto(2)">2</button>
+            <button id="three" onclick="appendto(3)">3</button>
+            <button id="minus" onclick="appendto('-')">➖</button>
+        </div>
+        <div id="row5">
+            <button id="zero" onclick="appendto(0)">0</button>
+            <button id="period" onclick="appendto('.')">.</button>
+            <button id="plus" onclick="appendto('+')">➕</button>
+            <button id="equal" onclick="calc()">=</button>
+        </div>
+        <div id="display-msg">
+            <marquee>Enter your data to perform basic calculations</marquee>
+        </div>
+    </div>
+</center>
+<script src="script.js"></script>
+</body>
+</html>
